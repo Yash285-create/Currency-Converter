@@ -45,7 +45,7 @@ for (country in countries) {
     }
     selectFrom.innerHTML += `<option>${country}</option>`
     selectTo.innerHTML += `<option>${country}</option>`
-    //console.log(`${country} ${countries[country]} `)
+    
 }
 
 selectFrom.addEventListener("change",(event)=>{
