@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+background: linear-gradient(135deg, #f4e4ba 60%, #ffe6f0 100%);
+}
+
+.container {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  min-height: 45vh;
+  width: 40vh;
+}
+
+form {
+  margin: 2rem 0 1rem 0;
+}
+
+form select,
+button,
+input {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 0.75rem;
+}
+
+form input {
+  border: 1px solid lightgray;
+  font-size: 1rem;
+  height: 3rem;
+  padding-left: 0.5rem;
+}
+
+.dropdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.dropdown i {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.select-container img {
+  max-width: 2rem;
+}
+
+.select-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6rem;
+  border-radius: 0.5rem;
+  border: 1px solid lightgray;
+}
+
+/* .select-container select {
+  font-size: 1rem;
+  width: auto;
+} */
+
+.msg {
+  margin: 2rem 0 2rem 0;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90vw;
+        min-height: 50vh;
+        padding: 1.5rem;
+        border-radius: 0.75rem;
+    }
+    .dropdown {
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+    .select-container {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 1rem;
+    }
+    .container {
+        width: 100vw;
+        min-height: 60vh;
+        padding: 1rem;
+        border-radius: 0.5rem;
+    }
+    form input,
+    form button,
+    form select {
+        font-size: 0.95rem;
+        height: 2.5rem;
+        border-radius: 0.5rem;
+    }
+    .dropdown i {
+        font-size: 1.2rem;
+        margin-top: 0.5rem;
+    }
+    .select-container img {
+        max-width: 1.5rem;
+    }
+}
+
+/* Improved Styling */
+.container {
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    transition: box-shadow 0.2s;
+}
+
+form input:focus,
+form select:focus {
+    border-color: #af4d98;
+    box-shadow: 0 0 0 2px #f4e4ba;
+}
+
+form button {
+    transition: background 0.2s;
+}
+
+form button:hover {
+    background-color: #8c3a76;
+}
+
+.select-container {
+    background: #fafafa;
+    transition: border-color 0.2s;
+}
+
+.select-container:focus-within {
+    border-color: #af4d98;
+}
+
+.msg {
+    color: #af4d98;
+    font-weight: 500;
+    text-align: center;
+    font-size: 1.1rem;
+}
+form button {
+  height: 3rem;
+  background-color: #af4d98;
+  color: #fff;
+  font-size: 1.15rem;
+  cursor: pointer;
+}
